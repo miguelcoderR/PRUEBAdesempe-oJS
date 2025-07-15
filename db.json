@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "4357",
+      "username": "pablo",
+      "password": "1976",
+      "role": "visitor"
+    },
+    {
+      "id": "d499",
+      "username": "juanka",
+      "password": "8989",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "name": "partido futbol",
+      "date": "2025-07-18",
+      "capacity": 7,
+      "id": "1fdb"
+    },
+    {
+      "name": "playa fets",
+      "date": "2025-07-20",
+      "capacity": 50,
+      "id": "ae07"
+    }
+  ],
+  "registrations": [
+    {
+      "id": "7e8c",
+      "userId": "4357",
+      "eventId": 1
+    },
+    {
+      "id": "8461",
+      "userId": "4357",
+      "eventId": 1
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+/* Futuristic Neon Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+
+:root {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #e0e7ef;
+  background-color: #0f2027;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  min-height: 100vh;
+  margin: 0;
+  color: #e0e7ef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 32px;
+  letter-spacing: 0.03em;
+  scroll-behavior: smooth;
+}
+
+#app, .app-container {
+  background: rgba(20, 30, 48, 0.95);
+  padding: 40px 32px;
+  border-radius: 18px;
+  box-shadow: 0 0 32px 4px #00ffe7, 0 2px 24px 0 #1a1a2e;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  border: 2px solid #00ffe7;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  margin: 2.5rem auto;
+}
+.app-container:hover, #app:hover {
+  box-shadow: 0 0 48px 8px #00ffe7, 0 4px 32px 0 #1a1a2e;
+}
+
+h1, h2, h3 {
+  color: #00ffe7;
+  margin-bottom: 18px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px #00ffe7, 0 0 2px #fff;
+}
+h1 { font-size: 2.3em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.2em; }
+
+a {
+  color: #00ffe7;
+  text-decoration: underline;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+.form input, .form select, .form textarea {
+  background: rgba(30, 40, 60, 0.95);
+  border: 2px solid #00ffe7;
+  color: #e0e7ef;
+  border-radius: 6px;
+  padding: 18px;
+  font-size: 1.15em;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form input:focus, .form textarea:focus, .form select:focus {
+  border-color: #007cf0;
+  box-shadow: 0 0 8px #00ffe7;
+  background: rgba(30, 40, 60, 1);
+  outline: none;
+}
+.form button {
+  padding: 18px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 8px auto 0 auto;
+  background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+  color: #181f2b;
+  box-shadow: 0 0 12px #00ffe7, 0 2px 8px #007cf0;
+  transition: background 0.2s, color 0.2s, transform 0.15s, box-shadow 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+}
+.form button:hover, .form button:focus {
+  background: linear-gradient(90deg, #007cf0 0%, #00ffe7 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 0 24px #00ffe7, 0 4px 16px #007cf0;
+}
+.form button:active {
+  transform: scale(0.97);
+}
+.error {
+  color: #ff416c;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-shadow: 0 0 6px #ff416c;
+}
+
+.dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.dashboard nav {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1.5rem;
+}
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+.dashboard li {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+.not-found {
+  text-align: center;
+  margin-top: 3rem;
+  color: #ff416c;
+  padding: 48px;
+}
+.not-found h2 {
+  font-size: 3em;
+  color: #ff416c;
+  text-shadow: 0 0 12px #ff416c;
+}
+.not-found h3 {
+  font-size: 1.5em;
+  color: #b0c4de;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  #app, .app-container { padding: 24px 8px; }
+}
+@media (max-width: 600px) {
+  body { padding: 8px; }
+  #app, .app-container { padding: 10px 2px; }
+  .form { font-size: 1em; }
+  .form input, .form select, .form button { font-size: 1em; padding: 0.7rem; }
+}
